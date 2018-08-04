@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+              <Button
+            android:id="@+id/id_test_addsublayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试加减速2"
+            ></Button>
+                <Button
+            android:id="@+id/id_test_removesublayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试加减速2"
+            ></Button>
+        </LinearLayout>
+ <ScrollView
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content">
+    	
+	       <LinearLayout 
+	           android:layout_width="match_parent" 
+	           android:layout_height="wrap_content" 
+	           android:background="@drawable/corners_btn_orange_bg"
+	          android:layout_marginBottom="10dip" 
+	          android:orientation="vertical" 
+	          android:padding="5dip">
+			 	
+	           	 <!--测试1 -->
+				 	<LinearLayout  
+				 	    android:layout_width="match_parent" 
+				 	    android:layout_height="wrap_content" 
+				 	    android:orientation="horizontal">
+		              <TextView 
+		                  android:layout_width="0dip" 
+		                  android:layout_weight="2" 
+		                  android:layout_height="wrap_content"
+		                   android:text="测试1"/>
+		                <SeekBar android:id="@+id/id_test_skbar_1" 
+		                    android:layout_width="0dip" 
+		                    android:layout_weight="6" 
+		                    android:layout_height="wrap_content"
+					      android:layout_margin="5dip"/>
+		          	</LinearLayout>
+          		 <!-- 缩放 -->
+				 	<LinearLayout  
+				 	    android:layout_width="match_parent" 
+				 	    android:layout_height="wrap_content" 
+				 	    android:orientation="horizontal">
+		              <TextView android:layout_width="0dip" 
+		                  android:layout_weight="2" 
+		                  android:layout_height="wrap_content" 
+		                  android:text="测试2"/>
+		                <SeekBar android:id="@+id/id_test_skbar_2"
+		                     android:layout_width="0dip" 
+		                     android:layout_weight="6"
+		                     android:layout_height="wrap_content"
+					      android:layout_margin="5dip"/>
+		          	</LinearLayout>
+		      	<!-- X方向 -->
+				 	<LinearLayout  
+				 	    android:layout_width="match_parent" 
+				 	    android:layout_height="wrap_content" 
+				 	    android:orientation="horizontal">
+		              <TextView android:layout_width="0dip" 
+		                  android:layout_weight="2" 
+		                  android:layout_height="wrap_content" 
+		                  android:text="测试3"/>
+		                <SeekBar 
+		                    android:id="@+id/id_test_skbar_3" 
+		                    android:layout_width="0dip" 
+		                    android:layout_weight="6" 
+		                    android:layout_height="wrap_content"
+					      android:layout_margin="5dip"/>
+		          	</LinearLayout>
+		         	<!-- Y方向 --> 	
+		         <LinearLayout  android:layout_width="match_parent" 
+		             android:layout_height="wrap_content" 
+		             android:orientation="horizontal">
+		              <TextView android:layout_width="0dip" 
+		                  android:layout_weight="2" 
+		                  android:layout_height="wrap_content" 
+		                  android:text="测试4"/>
+		                <SeekBar android:id="@+id/id_test_skbar_4" 
+		                    android:layout_width="0dip" 
+		                    android:layout_weight="6" 
+		                    android:layout_height="wrap_content"
+					      android:layout_margin="5dip"/>
+		          	</LinearLayout>
+             </LinearLayout>
+             </ScrollView>
+</RelativeLayout>

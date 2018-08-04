@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lansoeditor.advanceDemo"
+    android:versionCode="300"
+    android:versionName="3.0.0">
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="23" />
+
+    <uses-feature android:glEsVersion="0x00020000"></uses-feature>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <!-- android:largeHeap="true"让他内存显示最大到512M -->
+    <application
+        android:name="com.example.advanceDemo.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.example.advanceDemo.utils.StartActivity"
+            android:theme="@style/AppTheme2">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+
+        <activity
+            android:name="com.example.advanceDemo.ListMainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <!--AE===============================-->
+        <!--<activity-->
+            <!--android:name="com.example.advanceDemo.aeDemo.AEListActivity"-->
+            <!--android:screenOrientation="portrait">-->
+        <!--</activity>-->
+
+        <!--<activity-->
+            <!--android:name="com.example.advanceDemo.aeDemo.AEInputActivity"-->
+            <!--android:screenOrientation="portrait">-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.example.advanceDemo.aeDemo.VideoSlideShowActivity"-->
+            <!--android:screenOrientation="portrait">-->
+        <!--</activity>-->
+        <activity android:name="com.example.advanceDemo.aeDemo.AERecordFileHintActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name="com.example.advanceDemo.aeDemo.PlayerAEDemoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+
+
+
+        <!-- 列表 -->
+        <activity android:name="com.example.advanceDemo.ListLayerDemoActivity"></activity>
+        <activity android:name="com.example.advanceDemo.ListSceneDemoActivity"></activity>
+
+
+        <!-- 录制类  -->
+        <activity
+            android:name="com.example.advanceDemo.ListCameraRecordActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+
+        <activity
+            android:name="com.example.advanceDemo.camera.CameraLayerFullPortActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+
+
+        <activity
+            android:name="com.example.advanceDemo.camera.CameraLayerFullPortWithMp3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+
+
+        <activity
+            android:name="com.example.advanceDemo.camera.CameraSubLayerDemo1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+
+        <activity
+            android:name="com.example.advanceDemo.camera.CameraSubLayerDemo2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+
+        <activity
+            android:name="com.example.advanceDemo.camera.CameraLayerFullSegmentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+
+        <activity
+            android:name="com.example.advanceDemo.camera.CameraLayerFullLandscapeActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"></activity>
+
+        <activity
+            android:name="com.example.advanceDemo.camera.CameraLayerKTVDemoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"></activity>
+
+
+        <!-- 基本图层类 -->
+
+        <activity
+            android:name="com.example.advanceDemo.Demo1LayerMothedActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.example.advanceDemo.DouYinDemoActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name="com.example.advanceDemo.Demo2LayerMothedActivity"></activity>
+        <activity android:name="com.example.advanceDemo.Demo3LayerFilterActivity"></activity>
+
+
+        <activity android:name="com.example.advanceDemo.VideoSpeedDemoActivity"></activity>
+
+        <activity android:name="com.example.advanceDemo.VideoOneDODemoActivity"></activity>
+
+
+        <activity android:name="com.example.advanceDemo.BitmapLayerMarkActivity"></activity>
+
+
+        <activity android:name="com.example.advanceDemo.TwoVideoLayerActivity"></activity>
+
+        <activity android:name="com.example.advanceDemo.ExecuteTwoVideoLayerDemoActivity"></activity>
+
+
+        <activity android:name="com.example.advanceDemo.TextureLayerDemoActivity"></activity>
+
+        <activity android:name="com.example.advanceDemo.BitmapLayerFilterDemoActivity"></activity>
+
+        <activity
+            android:name="com.example.advanceDemo.VideoPlaySeekDemoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+
+        </activity>
+
+
+        <!-- 场景举例 -->
+        <activity android:name="com.example.advanceDemo.scene.LayerLayoutDemoActivity"></activity>
+        <activity android:name="com.example.advanceDemo.scene.Video2LayoutActivity"></activity>
+
+        <activity android:name="com.example.advanceDemo.scene.VideoLayerTransformActivity"></activity>
+
+        <activity android:name="com.example.advanceDemo.scene.MoreLayHeadSeekActivity"></activity>
+
+        <activity android:name="com.example.advanceDemo.scene.VideoLayerAutoUpdateActivity"></activity>
+
+        <activity android:name="com.example.advanceDemo.scene.PictureSetActivity"></activity>
+
+        <activity android:name="com.example.advanceDemo.scene.ExecuteAllDrawpadActivity"></activity>
+
+
+
+
+
+        <!-- 图片/声音 其他类. -->
+        <activity android:name="com.example.advanceDemo.ExecuteCanvasLayerActivity"></activity>
+
+        <activity android:name="com.example.advanceDemo.ExecuteVideoLayerActivity"></activity>
+
+        <activity android:name="com.example.advanceDemo.ExtractVideoFrameDemoActivity"></activity>
+
+
+        <activity android:name="com.example.advanceDemo.DisplayFramesActivity"></activity>
+        <activity android:name="com.example.advanceDemo.ListBitmapAudioActivity"></activity>
+
+
+        <activity android:name="com.example.advanceDemo.CanvasLayerDemoActivity"></activity>
+
+        <activity android:name="com.example.advanceDemo.BitmapEditDemoActivity"></activity>
+
+
+        <!-- 播放和其他类 -->
+
+        <activity android:name="com.example.advanceDemo.VideoPlayerActivity"></activity>
+        <activity
+            android:name="com.example.advanceDemo.utils.FileExplorerActivity"
+            android:label="@string/select_video"></activity>
+
+
+        <activity android:name="com.example.advanceDemo.scene.ExecuteBitmapLayerActivity"></activity>
+        <activity android:name="com.example.advanceDemo.ViewLayerDemoActivity"></activity>
+
+        <activity android:name="com.example.advanceDemo.ViewLayerOnlyActivity"></activity>
+
+        <activity android:name="com.example.advanceDemo.MVLayerDemoActivity"></activity>
+
+
+        <!--    common version -->
+        <activity android:name="com.example.commonDemo.CommonDemoActivity"></activity>
+        <activity android:name="com.example.commonDemo.MediaInfoActivity"></activity>
+        <activity android:name="com.example.commonDemo.AVEditorDemoActivity" />
+
+    </application>
+
+</manifest>

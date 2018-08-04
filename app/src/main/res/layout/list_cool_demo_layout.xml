@@ -1,0 +1,44 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    android:background="#FFA500"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFA500"
+    android:orientation="vertical" >
+ 
+     <RelativeLayout  android:id="@+id/id_cool_particle" style="@style/main_item_reletivelayout">
+           	 <TextView   android:text="视频  + 粒子" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	</RelativeLayout>
+
+
+        <RelativeLayout  android:id="@+id/id_cool_videoeffect" style="@style/main_item_reletivelayout">
+           	 <TextView   android:text="子图层 (抖音类)" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/>
+	</RelativeLayout>
+
+	<RelativeLayout  android:id="@+id/id_cool_videoseek" style="@style/main_item_reletivelayout">
+		<TextView   android:text="精确定位【seek】" style="@style/main_item_textview"/>
+		<TextView  style="@style/main_item_arrow"/>
+	</RelativeLayout>
+
+	<RelativeLayout  android:id="@+id/id_cool_lottie1" style="@style/main_item_reletivelayout">
+		<TextView   android:text="加载AE模板(Lottie)" style="@style/main_item_textview"/>
+		<TextView  style="@style/main_item_arrow"/>
+	</RelativeLayout>
+
+
+  	<TextView 
+  	    android:layout_margin="20dip"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:textSize="20dip"
+  	    android:text="此炫酷列表会持续增加...\n\n如果您有好的创意,也可以让我们来为您编写!"/>
+
+</LinearLayout>
+</ScrollView>
